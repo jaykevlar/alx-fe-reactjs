@@ -1,11 +1,11 @@
-const UserProfile = (props) => {
+function UserProfile({ name, age, bio }) {
   return (
-    <div style={{ border: '1px solid gray', padding: '15px', margin: '15px', borderRadius: '8px', backgroundColor: '#f0f8ff' }}>
-      <h2 style={{ color: 'blue', marginBottom: '10px' }}>{props.name}</h2>
-      <p style={{ fontSize: '16px', margin: '5px 0' }}>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
-      <p style={{ fontSize: '14px', color: '#333' }}>Bio: {props.bio}</p>
+    <div style={{ border: '1px solid gray', padding: '10px', margin: '10px', borderRadius: '8px' }}>
+      <h2 style={{ color: 'blue', marginBottom: '5px' }}>{name}</h2>
+      <p>Age: <span style={{ fontWeight: 'bold' }}>{age}</span></p>
+      <p>Bio: {bio}</p>
     </div>
   );
-};
+}
 
 export default UserProfile;
