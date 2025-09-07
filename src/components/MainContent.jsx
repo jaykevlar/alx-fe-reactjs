@@ -1,8 +1,7 @@
 const MainContent = () => {
   return (
-    <main style={{ padding: '20px', backgroundColor: '#f9f9f9', minHeight: '300px' }}>
-      <h2 style={{ color: '#333', textAlign: 'center' }}>Main Content</h2>
-      <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#555', textAlign: 'center' }}>
+    <main style={{ padding: '20px', backgroundColor: '#fafafa', minHeight: '200px', margin: '10px', borderRadius: '8px' }}>
+      <p style={{ fontSize: '16px', color: '#444' }}>
         I love to visit New York, Paris, and Tokyo.
       </p>
     </main>

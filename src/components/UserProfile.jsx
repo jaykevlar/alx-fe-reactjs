@@ -1,10 +1,10 @@
-const UserProfile = () => {
+const UserProfile = (props) => {
   return (
-    <section style={{ padding: '20px', border: '1px solid #ddd', margin: '20px auto', maxWidth: '400px', borderRadius: '8px' }}>
-      <h3 style={{ textAlign: 'center', color: '#333' }}>User Profile</h3>
-      <p style={{ textAlign: 'center', color: '#555' }}>Name: John Doe</p>
-      <p style={{ textAlign: 'center', color: '#555' }}>Email: john.doe@example.com</p>
-    </section>
+    <div style={{ border: '1px solid gray', padding: '15px', margin: '15px', borderRadius: '8px', backgroundColor: '#f0f8ff' }}>
+      <h2 style={{ color: 'blue', marginBottom: '10px' }}>{props.name}</h2>
+      <p style={{ fontSize: '16px', margin: '5px 0' }}>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
+      <p style={{ fontSize: '14px', color: '#333' }}>Bio: {props.bio}</p>
+    </div>
   );
 };
 
