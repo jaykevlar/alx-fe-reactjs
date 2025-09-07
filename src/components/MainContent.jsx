@@ -1,13 +1,12 @@
-function MainContent() {
+const MainContent = () => {
   return (
-    <main style={{ padding: '20px', backgroundColor: '#eef2f3', minHeight: '200px' }}>
-      <h2 style={{ color: 'darkred', textAlign: 'center' }}>Welcome to My Favorite Cities Page</h2>
-      <p style={{ lineHeight: '1.6', marginTop: '10px' }}>
-        Here, you’ll find a list of amazing cities that I admire for their culture,
-        history, and beauty.
+    <main style={{ padding: '20px', backgroundColor: '#f9f9f9', minHeight: '300px' }}>
+      <h2 style={{ color: '#333', textAlign: 'center' }}>Main Content</h2>
+      <p style={{ fontSize: '16px', lineHeight: '1.5', color: '#555', textAlign: 'center' }}>
+        This is the main content area of the app.
       </p>
     </main>
   );
-}
+};
 
 export default MainContent;

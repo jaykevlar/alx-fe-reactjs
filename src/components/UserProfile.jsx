@@ -1,11 +1,11 @@
-function UserProfile(props) {
+const UserProfile = () => {
   return (
-    <div style={{ border: '1px solid gray', padding: '15px', margin: '15px', borderRadius: '10px', backgroundColor: '#f9f9f9' }}>
-      <h2 style={{ color: 'blue', marginBottom: '10px' }}>{props.name}</h2>
-      <p>Age: <span style={{ fontWeight: 'bold', color: 'darkgreen' }}>{props.age}</span></p>
-      <p style={{ fontStyle: 'italic' }}>Bio: {props.bio}</p>
-    </div>
+    <section style={{ padding: '20px', border: '1px solid #ddd', margin: '20px auto', maxWidth: '400px', borderRadius: '8px' }}>
+      <h3 style={{ textAlign: 'center', color: '#333' }}>User Profile</h3>
+      <p style={{ textAlign: 'center', color: '#555' }}>Name: John Doe</p>
+      <p style={{ textAlign: 'center', color: '#555' }}>Email: john.doe@example.com</p>
+    </section>
   );
-}
+};
 
 export default UserProfile;
