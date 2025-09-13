@@ -1,9 +1,11 @@
-const WelcomeMessage = () => {
+function WelcomeMessage() {
   return (
-    <section style={{ padding: '15px', backgroundColor: '#e0f7fa', textAlign: 'center', margin: '10px 0' }}>
-      <h2 style={{ margin: 0, color: '#00796b' }}>Welcome to My App!</h2>
-    </section>
+    <div>
+      <h1>Hello everyone, I am learning React at ALX!</h1>
+      <p>This is a simple JSX component.</p>
+      <p>I am learning about JSX!</p>
+    </div>
   );
-};
+}
 
 export default WelcomeMessage;
