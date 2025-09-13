@@ -1,10 +1,10 @@
 function MainContent() {
   return (
-    <main style={{ padding: '20px', backgroundColor: '#eef2f3', minHeight: '200px' }}>
-      <h2 style={{ color: 'darkred', textAlign: 'center' }}>Welcome to My Favorite Cities Page</h2>
-      <p style={{ lineHeight: '1.6', marginTop: '10px' }}>
-        Here, you’ll find a list of amazing cities that I admire for their culture,
-        history, and beauty.
+    <main style={{ backgroundColor: '#f5f5f5', padding: '20px', minHeight: '200px' }}>
+      <h2 style={{ color: 'darkgreen' }}>Welcome to My City Guide</h2>
+      <p style={{ fontSize: '16px', lineHeight: '1.6' }}>
+        Here I share details about my favorite cities around the world. Explore and find your
+        next travel destination!
       </p>
     </main>
   );
