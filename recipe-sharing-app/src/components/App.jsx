@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeList from "./components/RecipeList";
 import RecipeDetails from "./components/RecipeDetails";
-import SearchBar from "./components/SearchBar"; // Optional for Task 2
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
@@ -11,7 +11,6 @@ const App = () => {
       <div>
         <h1>Recipe Sharing App</h1>
         <Routes>
-          {/* Main page: add + search + list */}
           <Route
             path="/"
             element={
@@ -22,7 +21,6 @@ const App = () => {
               </>
             }
           />
-          {/* Recipe details page */}
           <Route path="/recipe/:id" element={<RecipeDetailsWrapper />} />
         </Routes>
       </div>
@@ -30,7 +28,7 @@ const App = () => {
   );
 };
 
-// Wrapper to pass ID param to RecipeDetails
+// Wrapper component to pass recipe ID param
 const RecipeDetailsWrapper = () => {
   const { id } = useParams();
   return <RecipeDetails recipeId={Number(id)} />;
