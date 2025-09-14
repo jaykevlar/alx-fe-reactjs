@@ -5,33 +5,30 @@ import RecipeList from "./components/RecipeList";
 import RecipeDetails from "./components/RecipeDetails";
 import SearchBar from "./components/SearchBar";
 
-const App = () => {
+function App() {
   return (
     <Router>
-      <div>
-        <h1>Recipe Sharing App</h1>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <SearchBar />
-                <AddRecipeForm />
-                <RecipeList />
-              </>
-            }
-          />
-          <Route path="/recipe/:id" element={<RecipeDetailsWrapper />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <SearchBar />
+              <AddRecipeForm />
+              <RecipeList />
+            </>
+          }
+        />
+        <Route path="/recipe/:id" element={<RecipeDetailsWrapper />} />
+      </Routes>
     </Router>
   );
-};
+}
 
-// Wrapper component to pass recipe ID param
-const RecipeDetailsWrapper = () => {
+// Wrapper to pass route param to RecipeDetails
+function RecipeDetailsWrapper() {
   const { id } = useParams();
   return <RecipeDetails recipeId={Number(id)} />;
-};
+}
 
 export default App;
